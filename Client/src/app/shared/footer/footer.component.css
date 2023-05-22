@@ -1,11 +1,13 @@
-footer {
+.myFooter {
     position: relative;
 	background-color: #2e2e38;
     color: white;
     padding-top: 30px !important;
 	padding: 0;
+	bottom: 0;
     font-family: 'EYInterstate',sans-serif;
 }
+
 .single-content {
 	text-align: center;
 	padding: 115px 0;
@@ -88,6 +90,10 @@ footer {
 .no-underline {
 	text-decoration: none;
   }
+
+.copyrightbg {
+	background-color: rgba(0, 0, 0, 0.2);
+}
 
 @media (max-width: 767px) {
 	.single-box {

@@ -9,6 +9,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
+import { ScrollButtonComponent } from './shared/scroll-button/scroll-button.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactUsComponent } from './components/contactUs/contactUs.component';
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ScrollButtonComponent
   ],
   imports: [
     BrowserModule,
