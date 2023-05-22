@@ -115,3 +115,7 @@ form:hover .fa{
     background: #ffe600;
     color: white;
 }
+
+.posRel{
+	position: relative !important;
+}

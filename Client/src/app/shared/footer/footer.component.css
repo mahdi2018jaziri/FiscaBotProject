@@ -46,8 +46,11 @@
 	font-size: 18px;
 	margin-right: 15px;
 }
-
+.socialsRel{
+	position: relative;
+}
 .bottom-socials {
+	padding-bottom: 10px !important;
     position: absolute;
     bottom: 70px;
     left: 50%;
