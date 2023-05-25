@@ -5,13 +5,13 @@
         <div class="justify-content-center ps-5">
           <form class="form-layout">
             <div class="form-group">
-              <input type="text" class="form-input" placeholder="Nom et Prénom">
+              <input type="text" class="form-input" name="email" placeholder="Nom et Prénom" [(ngModel)]="contact.FullName">
             </div>
             <div class="form-group">   
-              <input type="email" class="form-input" placeholder="E-mail">
+              <input type="email" class="form-input" name="email" placeholder="E-mail" [(ngModel)]="contact.email">
             </div>
             <div class="form-group">
-              <select class="form-input">
+              <select class="form-input" name="subject"[(ngModel)]="contact.subject" >
                 <option class="bg-option" value="">Sélectionnez un sujet</option>
                 <option value="ressources">Ressources</option>
                 <option value="investissements">Investissements</option>
@@ -20,11 +20,16 @@
                 <option value="autres">Autres</option>
               </select>
             </div>
+
+            <div>
+            <input type="hidden" [(ngModel)]="contact.state" name="state">
+            </div>
+
             <div class="form-group">
-              <textarea class="form-input" rows="4" placeholder="Entrez votre message"></textarea>
+              <textarea class="form-input" rows="4" placeholder="Entrez votre message" name="message" [(ngModel)]="contact.message"></textarea>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end buttonright">
-                <button type="submit" class="btn button-style mt-3 mb-5">Envoyer</button>
+                <button type="submit" (click)="createContact()" class="btn button-style mt-3 mb-5">Envoyer</button>
             </div>
             
           </form>

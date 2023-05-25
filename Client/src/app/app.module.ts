@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './Material.Module';
 import { AppComponent } from './app.component';
@@ -11,6 +10,10 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { ScrollButtonComponent } from './shared/scroll-button/scroll-button.component';
 import { RessourceLegaleComponent } from './components/ressource-legale/ressource-legale.component';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
@@ -26,7 +29,9 @@ import { RessourceLegaleComponent } from './components/ressource-legale/ressourc
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    HttpClientModule
     ],
   providers: [],
   bootstrap: [AppComponent]
