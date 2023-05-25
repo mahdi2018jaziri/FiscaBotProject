@@ -17,29 +17,41 @@
   padding: 15px;
   border: none;
   outline: none;
-  background-color: #adabb1;
-  color: #fff;
+  background-color: #eaeaf2;
+  color: #2e2e38;
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
 }
+.form-select{
+  background-color: #18187d;
+}
+.bg-option:hover { background-color: black !important;}
 
+.buttonright{
+  padding-right: 61px !important;
+}
 .button-style{
   display: inline-block;
-  background-color: #ffe600 ;
-  color: #fff;
-  font-size: 1.1rem;
+  border-radius: 0% !important;
+  background-color: #2e2e38 ;
+  color: #ffe600;
+  font-size: 1.3rem;
+  text-align: center;
+  height: 50px;
+  width: 120px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
   letter-spacing: 1px;
-  font-weight: 600;
-  border: 2px solid transparent;
+  font-weight: 500;
+  border: 1px solid #ffe600;
   cursor: pointer;
   transition: ease .20s;
-  width: 200px;
+ 
 }
 .button-style:hover{
-  border: 2px solid #ffe600;
-  background-color: transparent;
-  transform: scale(1.1);
-  color: #2e2e38;
+  color: #2e2e38 ;
+  background-color: #ffe600 ;
+  font-size: 1.3rem;
 }
 
 .contact-img img{

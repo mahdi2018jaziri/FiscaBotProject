@@ -3,11 +3,12 @@ import { Title } from "@angular/platform-browser";
 import { RouterModule, Routes, TitleStrategy, RouterStateSnapshot } from '@angular/router';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { HomeComponent } from './components/home/home.component';
+import { RessourceLegaleComponent } from './components/ressource-legale/ressource-legale.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
-
   {path: "contactUs",title: "contactUs", component: ContactUsComponent},
+  {path: "ressourceLegale", component: RessourceLegaleComponent},
 ];
 
 @Injectable()

@@ -7,12 +7,12 @@
   <div class="col-7" >
     <ul class="nav px-3 textul col-lg-auto me-lg-auto mb-2 justify-content-start mb-md-0 logospace">
       <!-- Navigation items -->
-      <li><a [matMenuTriggerFor]="lvl1master" href="#" class="nav-link px-3 text-white motnav">Ressources</a></li>
+      <li><a [matMenuTriggerFor]="lvl1master" class="nav-link px-3 text-white motnav">Ressources</a></li>
       <li><a href="#" class="nav-link px-3 text-white motnav">Investissements</a></li>
       <li><a href="#" class="nav-link px-3 text-white motnav">Fiscalité Internationale</a></li>
       <li><a href="#" class="nav-link px-3 text-white motnav">Détermination Fiscal</a></li>
       <mat-menu #lvl1master="matMenu" class="mt-3">
-          <button [matMenuTriggerFor]="ressources" mat-menu-item>Ressources légales et administratives</button>
+          <button routerLink="/ressourceLegale" [matMenuTriggerFor]="ressources" mat-menu-item>Ressources légales et administratives</button>
           <button [matMenuTriggerFor]="ressourcesEy" mat-menu-item>Ressources EY</button>
       </mat-menu>
       <mat-menu #ressources="matMenu">

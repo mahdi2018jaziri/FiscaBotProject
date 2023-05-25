@@ -10,6 +10,7 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './components/home/home.component';
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { ScrollButtonComponent } from './shared/scroll-button/scroll-button.component';
+import { RessourceLegaleComponent } from './components/ressource-legale/ressource-legale.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { ScrollButtonComponent } from './shared/scroll-button/scroll-button.comp
     FooterComponent,
     HomeComponent,
     ContactUsComponent,
-    ScrollButtonComponent
+    ScrollButtonComponent,
+    RessourceLegaleComponent
   ],
   imports: [
     BrowserModule,
