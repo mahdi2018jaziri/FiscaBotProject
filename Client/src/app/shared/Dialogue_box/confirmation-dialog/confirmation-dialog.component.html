@@ -1,0 +1,51 @@
+
+
+<h1 mat-dialog-title class="mat-title">Add contact </h1>
+<div  fxLayout="row" fxLayoutAlign="center start">
+  <div fxFlex="30%">
+    <div mat-dialog-content class="mat-message">
+      {{ data.message }}
+    </div>
+    <div mat-dialog-actions class="d-flex justify-content-center">
+      <button mat-button mat-dialog-close (click)="onCancel()">No</button>
+      <button mat-button mat-dialog-close cdkFocusInitial (click)="onConfirm()">Ok</button>
+    </div>
+  </div>
+</div>
+<!-- <div class="modal-dialog ">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h5 class="modal-title">{{ data.message }}</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body">
+      Contenu du formulaire
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-primary" (click)="onConfirm()">Confirmer</button>
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" (click)="onCancel()">Annuler</button>
+    </div>
+  </div>
+</div> -->
+
+
+<!-- <ng-template #myModalContent>
+
+<div class="modal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{ data.message }}</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Modal body text goes here.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" (click)="onCancel()" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary"(click)="onConfirm()" >Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-template> -->

@@ -12,6 +12,15 @@ import { ScrollButtonComponent } from './shared/scroll-button/scroll-button.comp
 import { RessourceLegaleComponent } from './components/ressource-legale/ressource-legale.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { ConfirmationDialogComponent } from './shared/Dialogue_box/confirmation-dialog/confirmation-dialog.component';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { RevueFiscaleEyComponent } from './components/Revue_Fiscale/revue-fiscale-ey/revue-fiscale-ey.component'; 
+
+
+
+
 
 
 
@@ -23,7 +32,9 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ContactUsComponent,
     ScrollButtonComponent,
-    RessourceLegaleComponent
+    RessourceLegaleComponent,
+    ConfirmationDialogComponent,
+    RevueFiscaleEyComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +42,12 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatDialogModule,
+    MatProgressSpinnerModule,
+    MatProgressBarModule,
+    
+
     ],
   providers: [],
   bootstrap: [AppComponent]

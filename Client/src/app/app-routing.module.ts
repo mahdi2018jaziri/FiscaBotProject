@@ -4,11 +4,16 @@ import { RouterModule, Routes, TitleStrategy, RouterStateSnapshot } from '@angul
 import { ContactUsComponent } from './components/contactUs/contactUs.component';
 import { HomeComponent } from './components/home/home.component';
 import { RessourceLegaleComponent } from './components/ressource-legale/ressource-legale.component';
+import { RevueFiscaleEyComponent } from './components/Revue_Fiscale/revue-fiscale-ey/revue-fiscale-ey.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "contactUs",title: "contactUs", component: ContactUsComponent},
   {path: "ressourceLegale", component: RessourceLegaleComponent},
+  {path: "RevueFiscaleEy", component: RevueFiscaleEyComponent},
+
+
+  
 ];
 
 @Injectable()

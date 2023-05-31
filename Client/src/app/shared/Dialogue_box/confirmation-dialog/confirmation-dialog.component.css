@@ -1,0 +1,16 @@
+button:hover {
+    margin-right: 8px;
+    background-color: yellow;
+
+  }
+  .mat-title {
+    color: black;
+    border-bottom: 1px solid #dee2e6;
+    font-weight: 700 !important;
+
+}
+
+.mat-message{
+    border-bottom: 1px solid #dee2e6;
+}
+

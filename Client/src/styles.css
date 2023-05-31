@@ -2,3 +2,8 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: 'EYInterstate' !important; }
+
+.custom-progress-bar .mat-progress-bar-primary,
+.custom-progress-bar .mat-progress-bar-buffer {
+  background-color: yellow !important;
+}
